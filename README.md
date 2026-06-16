@@ -2,7 +2,7 @@
 
 A distributed system designed for high-frequency hardware telemetry ingestion. Built entirely in **Go**, this project demonstrates a highly concurrent, memory-efficient data pipeline capable of streaming metrics from edge devices to a centralized CQRS architecture.
 
-## 🚀 Architectural Highlights
+## Architectural Highlights
 
 - **Binary WebSockets:** Telemetry agents stream metrics using **Protobuf over persistent WebSockets**, bypassing the immense TCP and HTTP header overhead associated with traditional REST polling.
 - **CQRS Implementation:**
@@ -37,7 +37,7 @@ graph LR
     API -.-> RD
 ```
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Language:** Go 1.26
 - **Transport:** WebSockets (`gorilla/websocket`)
@@ -46,7 +46,7 @@ graph LR
 - **Cache (Speed Layer):** Redis (Sorted Sets + Lua Scripting)
 - **Deployment:** Docker (Multi-stage)
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 ├── cmd/
@@ -68,7 +68,7 @@ graph LR
 └── docker-compose.yml         # Local cluster orchestration.
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Configuring Secrets
 
